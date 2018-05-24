@@ -1,1 +1,1 @@
-console.log ("Kharchenko Svetlana")
+console.log ("Харченко Светлана")
