@@ -9,7 +9,3 @@ console.log (sum / (arr1.length));
 console.log (Math.min.apply (null, (arr1)));
 console.log (Math.max.apply (null, (arr1)));
 
-
-// const obj1 = { from: 1, to: 4, value: [4, 5, 12, 7, 5, 4], ignore: [2] };
-// console.log (array);
-

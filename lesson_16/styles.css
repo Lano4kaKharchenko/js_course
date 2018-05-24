@@ -1,0 +1,14 @@
+#start, #pause, #stop {
+	color: darkblue;
+	background: lightblue;
+}
+/*#startN, #pauseN, #stopN {
+	color: darkblue;
+	background: white;
+}*/
+
+#startN {
+	disabled: none;
+	
+	background: white;
+}
