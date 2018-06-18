@@ -1,22 +1,20 @@
 export default class Dom {
     constructor() {
-        const preloader = document.getElementsByClassName('preloader')[0];
-        const inp1 = document.getElementById('inp1');
-        const inp2 = document.getElementById('inp2');
-        // const btn = document.getElementById('btn');
-    }
+        this.preloader = document.getElementById('preloader');
+        this.location = document.getElementById('location');
+        }
 
     showPreloader() {
-        preloader.style.display = 'inline-block';
+       this.preloader.style.opacity = 1;
+       this.preloader.style.opacity = 0;
     }
 
     hidePreloader() {
-        preloader.style.display = 'none';
+        this.preloader.style.opacity = 0;
+        this.preloader.style.opacity = 1;
     }
 
     setCoordinates(coordinates) {
-        inp1.value = coordinates.latitude;
-        inp2.value = coordinates.longitude;
-
+        this.localionApi = coordinates.latitude;
     }
 } 
