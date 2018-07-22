@@ -1,10 +1,13 @@
-const moment = require("moment");
-let date = prompt("Введите дату рождения в формате 01-01-2019 ", "");
-let day = moment(date);
-let current = moment();
+const moment = require('moment');
+moment.locale('ru');
+const btn = document.getElementById('btn');
+const num = document.getElementById('num');
+const date = document.getElementById('date');
 
-// console.log(current);
+date.value = "2019-01-12";
 
-result = day.diff(current, 'days');
 
-document.write(result);
+btn.addEventListener('click', function(){
+    const result = moment().diff(`${date.value}`, 'days');
+    num.innerHTML = `${Math.abs(result)}`;
+})
